@@ -26,6 +26,7 @@ import { Transition } from '@headlessui/react'
 import { Style } from './style'
 import replaceSearchResult from '@/components/Mark'
 import CommonHead from '@/components/CommonHead'
+import { AdSlot } from '@/components/GoogleAdsense'
 
 /**
  * 基础布局 采用左中右三栏布局，移动端使用顶部导航栏
@@ -102,6 +103,7 @@ const LayoutBase = (props) => {
                     >
                         {children}
                     </Transition>
+                  <AdSlot type="native" />
                 </section>
 
                 {/* 右侧栏样式 */}
